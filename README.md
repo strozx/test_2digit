@@ -1,7 +1,7 @@
 # Test of importing large CSV data
 
 
-##Instalation instructions
+## Instalation instructions
 If using docker use Laravel sail:
 Make sure docker is running then
 ```
@@ -29,4 +29,4 @@ database/migrations/2024_03_06_23000_create_countries_table.php
 ```
 
 
-First I parse the data with league/csv package to a Collection then I prepare data object with the same key as they are in the DB table. Then upsert the data based on the unique identifier emso. Upsert will update a row if the data is different or insert if emso is not present.
+First I parse the data with league/csv package to a Collection then I prepare data object with the same keys as they are in the DB table. Then upsert the data based on the unique identifier emso. Upsert will update a row if the data is different or insert if emso is not present.
