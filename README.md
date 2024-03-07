@@ -5,17 +5,17 @@
 If using docker use Laravel sail:
 Make sure docker is running then
 ```
-1. composer install
-2. ./vendor/bin/sail up
-3. sail artisan migrate
-4. sail artisan db:seed
+composer install
+./vendor/bin/sail up
+sail artisan migrate
+sail artisan db:seed
 
 ```
 If installing trough XAMPP/LAMPP
 ```
-1. composer install
-2. php artisan migrate
-3. php artisan db:seed
+composer install
+php artisan migrate
+php artisan db:seed
 
 ```
 
