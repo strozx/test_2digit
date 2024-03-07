@@ -6,6 +6,10 @@ If using docker use Laravel sail:
 Make sure docker is running then
 ```
 composer install
+cp .env.example .env
+```
+Set database connection info inside .env file(for Laravel Sail the default u:sail p:password)
+```
 ./vendor/bin/sail up
 sail artisan migrate
 sail artisan db:seed
@@ -14,6 +18,10 @@ sail artisan db:seed
 If installing trough XAMPP/LAMPP
 ```
 composer install
+cp .env.example .env
+```
+Set database connection info inside .env file
+```
 php artisan migrate
 php artisan db:seed
 
